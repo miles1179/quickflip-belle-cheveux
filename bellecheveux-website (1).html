@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belle Cheveux Salon | Hair Salon in Cheshire, CT</title>
+<meta name="description" content="Belle Cheveux Salon in Cheshire, CT. Professional hair services for men, women, and children. Master hairstylists. 5-star rated. Book your appointment today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #0E0D0B;
+  --near-black: #1A1916;
+  --dark: #2A2720;
+  --warm-dark: #3D3830;
+  --muted: #8A8278;
+  --tan: #C4B49A;
+  --warm-mid: #D4C8B8;
+  --blush: #E8D8CC;
+  --blush-light: #F2E8E0;
+  --cream: #FAF6F0;
+  --warm-white: #FDFAF6;
+  --white: #FFFFFF;
+  --gold: #B8986A;
+  --gold-light: #D4B488;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); background: var(--warm-white); color: var(--dark); line-height: 1.6; }
+
+/* NAV */
+nav {
+  background: var(--black);
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+}
+.nav-logo-main {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.nav-logo-sub {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 3px;
+}
+.nav-logo-dots {
+  font-size: 8px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  opacity: 0.6;
+}
+.nav-links { display: flex; gap: 2.5rem; align-items: center; }
+.nav-links a {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-book {
+  background: transparent !important;
+  color: var(--gold) !important;
+  border: 1px solid rgba(184,152,106,0.5) !important;
+  padding: 8px 24px;
+  font-size: 10px !important;
+  letter-spacing: 3px !important;
+  transition: all 0.2s !important;
+}
+.nav-book:hover { background: var(--gold) !important; color: var(--black) !important; border-color: var(--gold) !important; }
+
+/* HERO */
+.hero {
+  background: var(--near-black);
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 4rem 6rem 3rem;
+  position: relative;
+  z-index: 2;
+}
+.hero-right {
+  background: var(--warm-dark);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-right-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 60% 40%, rgba(184,152,106,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(232,216,204,0.08) 0%, transparent 50%);
+}
+.hero-right-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--gold) 0px, var(--gold) 1px,
+    transparent 1px, transparent 40px
+  ), repeating-linear-gradient(
+    -45deg,
+    var(--gold) 0px, var(--gold) 1px,
+    transparent 1px, transparent 40px
+  );
+}
+.hero-right-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 3rem;
+}
+.hero-right-quote {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255,255,255,0.12);
+  line-height: 1.3;
+  letter-spacing: 1px;
+  user-select: none;
+}
+.hero-right-ornament {
+  font-size: 80px;
+  color: rgba(184,152,106,0.15);
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-family: serif;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-light);
+  font-weight: 300;
+}
+.hero-sub {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.85;
+  max-width: 400px;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
+
+.btn { display: inline-block; text-decoration: none; cursor: pointer; border: none; font-family: var(--font-sans); font-weight: 500; letter-spacing: 3px; text-transform: uppercase; transition: all 0.25s; font-size: 11px; }
+.btn-gold-solid { background: var(--gold); color: var(--black); padding: 14px 36px; }
+.btn-gold-solid:hover { background: var(--gold-light); }
+.btn-ghost { background: transparent; color: rgba(255,255,255,0.6); padding: 13px 34px; border: 1px solid rgba(255,255,255,0.18); }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+.btn-dark { background: var(--black); color: var(--gold); padding: 14px 36px; border: 1px solid var(--gold); }
+.btn-dark:hover { background: var(--gold); color: var(--black); }
+.btn-outline-cream { background: transparent; color: var(--dark); padding: 13px 34px; border: 1px solid rgba(42,39,32,0.25); font-size: 11px; }
+.btn-outline-cream:hover { border-color: var(--dark); }
+
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.rating-stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; }
+.rating-text { font-size: 11px; font-weight: 300; letter-spacing: 2px; color: rgba(255,255,255,0.4); text-transform: uppercase; }
+
+/* DIVIDER */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0;
+}
+
+/* TICKER */
+.ticker {
+  background: var(--black);
+  border-top: 1px solid rgba(184,152,106,0.2);
+  border-bottom: 1px solid rgba(184,152,106,0.2);
+  padding: 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker-track { display: inline-flex; gap: 4rem; animation: ticker 28s linear infinite; }
+.ticker-item {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.ticker-diamond { color: var(--gold); font-size: 8px; opacity: 0.7; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* SECTIONS */
+section { padding: 6rem 3rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-label::before { content: ''; width: 24px; height: 1px; background: var(--gold); flex-shrink: 0; }
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 1px;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+.section-title-light { color: var(--white); }
+.section-title-light em { color: var(--gold-light); }
+.section-body {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.9;
+  max-width: 480px;
+  letter-spacing: 0.3px;
+}
+
+/* INTRO STRIP */
+.intro-strip {
+  background: var(--cream);
+  padding: 4rem 3rem;
+  border-bottom: 1px solid var(--warm-mid);
+}
+.intro-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.intro-item {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-right: 1px solid var(--warm-mid);
+}
+.intro-item:last-child { border-right: none; }
+.intro-num {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.intro-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* SERVICES */
+.services-bg { background: var(--warm-white); }
+.services-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--warm-mid);
+  border: 1px solid var(--warm-mid);
+}
+.service-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: background 0.3s;
+}
+.service-card:hover { background: var(--cream); }
+.service-top { position: absolute; top: 0; left: 0; right: 0; height: 2px; background: transparent; transition: background 0.3s; }
+.service-card:hover .service-top { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+.service-icon { font-size: 28px; margin-bottom: 1.25rem; display: block; opacity: 0.7; }
+.service-name {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+.service-desc {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+.service-list { list-style: none; }
+.service-list li {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  padding: 5px 0;
+  padding-left: 14px;
+  position: relative;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--blush-light);
+}
+.service-list li:last-child { border-bottom: none; }
+.service-list li::before { content: ''; position: absolute; left: 0; top: 12px; width: 5px; height: 1px; background: var(--gold); }
+
+/* ABOUT */
+.about-bg { background: var(--black); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.about-visual {
+  position: relative;
+}
+.about-frame {
+  background: var(--warm-dark);
+  aspect-ratio: 3/4;
+  max-height: 480px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-frame-inner {
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(184,152,106,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-frame-icon { font-size: 48px; opacity: 0.2; }
+.about-frame-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.2);
+}
+.about-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.about-badge-num { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--black); line-height: 1; }
+.about-badge-text { font-family: var(--font-sans); font-size: 8px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--black); text-align: center; }
+.about-content {}
+.about-pull {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255,255,255,0.15);
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+.about-body {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3px;
+}
+.about-points { list-style: none; margin-bottom: 2.5rem; }
+.about-points li {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.4);
+  padding: 8px 0;
+  padding-left: 18px;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.about-points li::before { content: ''; position: absolute; left: 0; top: 16px; width: 8px; height: 1px; background: var(--gold); }
+
+/* HOURS */
+.hours-bg { background: var(--cream); }
+.hours-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.hours-table { width: 100%; }
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--warm-mid);
+  font-size: 13px;
+}
+.hours-row:last-child { border-bottom: none; }
+.hours-day { font-weight: 500; letter-spacing: 1px; color: var(--dark); }
+.hours-time { font-weight: 300; color: var(--muted); letter-spacing: 0.5px; }
+.hours-time.extended { color: var(--gold-dark, var(--gold)); font-weight: 500; }
+.hours-cta-box {
+  background: var(--black);
+  padding: 2.5rem;
+  text-align: center;
+}
+.hours-cta-box h3 {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+.hours-cta-box h3 em { font-style: italic; color: var(--gold-light); }
+.hours-cta-box p { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 1.75rem; letter-spacing: 0.3px; }
+.hours-phone {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--gold);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.hours-phone:hover { color: var(--gold-light); }
+
+/* REVIEWS */
+.reviews-bg { background: var(--warm-white); }
+.reviews-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.review-card {
+  background: var(--white);
+  border: 1px solid var(--warm-mid);
+  padding: 2rem;
+  position: relative;
+}
+.review-card::before {
+  content: '\201C';
+  font-family: var(--font-serif);
+  font-size: 72px;
+  color: var(--gold);
+  opacity: 0.15;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.25rem;
+  line-height: 1;
+}
+.review-stars { color: var(--gold); font-size: 12px; letter-spacing: 3px; margin-bottom: 1rem; }
+.review-text {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--dark);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+.review-author {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.review-platform {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* FAQ */
+.faq-bg { background: var(--cream); }
+.faq-wrap { margin-top: 3.5rem; max-width: 720px; }
+.faq-item { border-bottom: 1px solid var(--warm-mid); }
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--dark);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-align: left;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.faq-plus { color: var(--gold); font-size: 20px; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; line-height: 1; }
+.faq-item.open .faq-plus { transform: rotate(45deg); }
+.faq-answer { font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.85; padding-bottom: 1.25rem; display: none; letter-spacing: 0.3px; }
+.faq-item.open .faq-answer { display: block; }
+
+/* FINAL CTA */
+.final-cta-bg { background: var(--near-black); }
+.final-cta {
+  text-align: center;
+  padding: 7rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta-ornament {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.final-cta-ornament-text {
+  font-family: var(--font-serif);
+  font-size: 240px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255,255,255,0.02);
+  user-select: none;
+  letter-spacing: -4px;
+}
+.final-cta-inner { position: relative; z-index: 2; }
+.final-cta h2 {
+  font-family: var(--font-serif);
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+.final-cta h2 em { font-style: italic; color: var(--gold-light); }
+.final-cta p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.85;
+  max-width: 440px;
+  margin: 0 auto 2.5rem;
+  letter-spacing: 0.3px;
+}
+.cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* FOOTER */
+footer {
+  background: var(--black);
+  border-top: 1px solid rgba(184,152,106,0.2);
+  padding: 4rem 3rem 2rem;
+}
+.footer-grid {
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+}
+.footer-logo-main { font-family: var(--font-serif); font-size: 24px; font-weight: 600; letter-spacing: 6px; text-transform: uppercase; color: var(--white); }
+.footer-logo-sub { font-family: var(--font-sans); font-size: 9px; font-weight: 300; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); margin-top: 3px; margin-bottom: 1.25rem; }
+.footer-tagline { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.35); line-height: 1.8; max-width: 260px; margin-bottom: 1.75rem; letter-spacing: 0.3px; }
+.social-row { display: flex; gap: 0.65rem; }
+.social-link { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 10px; font-family: var(--font-sans); font-weight: 500; letter-spacing: 1px; color: rgba(255,255,255,0.35); text-decoration: none; transition: all 0.2s; }
+.social-link:hover { border-color: var(--gold); color: var(--gold); }
+.footer-col h4 { font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+.footer-col ul { list-style: none; }
+.footer-col li { font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.38); margin-bottom: 0.65rem; line-height: 1.6; letter-spacing: 0.5px; }
+.footer-col a { color: rgba(255,255,255,0.38); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-bottom p { font-size: 11px; font-weight: 300; color: rgba(255,255,255,0.22); letter-spacing: 0.5px; }
+.footer-bottom a { color: var(--gold); text-decoration: none; opacity: 0.7; }
+.footer-bottom a:hover { opacity: 1; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .hero h1 { font-size: 54px; }
+  .section-title { font-size: 42px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .about-frame { aspect-ratio: 16/9; max-height: 240px; }
+  .hours-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .intro-grid { grid-template-columns: 1fr; }
+  .intro-item { border-right: none; border-bottom: 1px solid var(--warm-mid); }
+}
+@media (max-width: 600px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  section { padding: 4.5rem 1.5rem; }
+  .hero-left { padding: 4rem 1.5rem; }
+  .hero h1 { font-size: 44px; }
+  .section-title { font-size: 34px; }
+  .final-cta h2 { font-size: 40px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .intro-strip { padding: 3rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <span class="nav-logo-main">Belle Cheveux</span>
+    <span class="nav-logo-dots">&#9679; &nbsp; &#9679; &nbsp; &#9679;</span>
+    <span class="nav-logo-sub">Salon &nbsp;&bull;&nbsp; Cheshire, CT</span>
+  </a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#faq">FAQ</a>
+    <a href="#book" class="nav-book btn">Book Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top" style="padding:0;">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Cheshire, Connecticut</div>
+    <h1>YOUR HAIR.<br>YOUR <em>Vision.</em><br>Brought to Life.</h1>
+    <p class="hero-sub">Belle Cheveux Salon brings master-level hair artistry to Cheshire, CT. Professional services for men, women, and children in a welcoming, elevated environment.</p>
+    <div class="hero-actions">
+      <a href="#book" class="btn btn-gold-solid">Book an Appointment</a>
+      <a href="#services" class="btn btn-ghost">View Services</a>
+    </div>
+    <div class="hero-rating">
+      <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="rating-text">5.0 Rating &nbsp;&bull;&nbsp; Cheshire, CT</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-bg"></div>
+    <div class="hero-right-pattern"></div>
+    <div class="hero-right-text">
+      <div class="hero-right-ornament">&#10022;</div>
+      <div class="hero-right-quote">
+        "We can bring<br>your hair vision<br>to life."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Hair Color <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Cuts &amp; Styling <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Highlights <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Men, Women &amp; Children <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Cheshire, CT <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Master Hairstylists <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">5.0 Star Rating <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Book Online <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Hair Color <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Cuts &amp; Styling <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Highlights <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Men, Women &amp; Children <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Cheshire, CT <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Master Hairstylists <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">5.0 Star Rating <span class="ticker-diamond">&#9670;</span></span>
+    <span class="ticker-item">Book Online <span class="ticker-diamond">&#9670;</span></span>
+  </div>
+</div>
+
+<!-- INTRO STRIP -->
+<div class="intro-strip">
+  <div class="intro-grid">
+    <div class="intro-item">
+      <div class="intro-num">5.0</div>
+      <div class="intro-label">Star Rating</div>
+    </div>
+    <div class="intro-item">
+      <div class="intro-num">3</div>
+      <div class="intro-label">Specialties</div>
+    </div>
+    <div class="intro-item">
+      <div class="intro-num">7</div>
+      <div class="intro-label">Days a Week</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="section-inner">
+    <div class="section-label">What We Offer</div>
+    <div class="section-title">Our <em>Services</em></div>
+    <p class="section-body">Every service at Belle Cheveux is performed by a master hairstylist who takes the time to understand your hair, your lifestyle, and the look you are after.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-top"></div>
+        <span class="service-icon">&#9999;&#65039;</span>
+        <div class="service-name">Cuts &amp; Styling</div>
+        <p class="service-desc">Precision cuts tailored to your face shape, texture, and personal style. For men, women, and children of all ages.</p>
+        <ul class="service-list">
+          <li>Women's haircut and style</li>
+          <li>Men's haircut</li>
+          <li>Children's haircut</li>
+          <li>Blowout and finish</li>
+          <li>Special occasion styling</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-top"></div>
+        <span class="service-icon">&#127775;</span>
+        <div class="service-name">Color</div>
+        <p class="service-desc">From natural-looking color to bold transformations. Our colorists are trained in the latest techniques to protect and enhance your hair.</p>
+        <ul class="service-list">
+          <li>Full color</li>
+          <li>Highlights and lowlights</li>
+          <li>Balayage and ombre</li>
+          <li>Color correction</li>
+          <li>Gloss and toning</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-top"></div>
+        <span class="service-icon">&#128133;</span>
+        <div class="service-name">Treatments</div>
+        <p class="service-desc">Restorative and protective treatments that strengthen, smooth, and bring life back to your hair from the inside out.</p>
+        <ul class="service-list">
+          <li>Deep conditioning</li>
+          <li>Keratin smoothing</li>
+          <li>Scalp treatments</li>
+          <li>Bond repair treatments</li>
+          <li>Damage restoration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-bg" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-frame">
+          <div class="about-frame-inner">
+            <span class="about-frame-icon">&#128247;</span>
+            <span class="about-frame-label">Salon Photo</span>
+          </div>
+        </div>
+        <div class="about-badge">
+          <span class="about-badge-num">5&#9733;</span>
+          <span class="about-badge-text">Rated</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-label">Our Philosophy</div>
+        <div class="section-title section-title-light">Where <em>Quality</em><br>and Service Meet</div>
+        <div class="about-pull">"We help you feel confident in the way you present yourself to the world."</div>
+        <p class="about-body">Belle Cheveux Salon was built on a simple belief: every client deserves to leave feeling better than when they walked in. Our master hairstylists take the time to understand not just your hair, but your lifestyle, your preferences, and the look you want to achieve. We are not a volume shop. We are a craft salon.</p>
+        <ul class="about-points">
+          <li>Master-level hairstylists</li>
+          <li>Services for men, women, and children</li>
+          <li>Open seven days a week</li>
+          <li>Cheshire, CT community focused</li>
+        </ul>
+        <a href="#book" class="btn btn-dark">Book Your Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section class="hours-bg" id="hours">
+  <div class="section-inner">
+    <div class="section-label">When to Visit</div>
+    <div class="section-title">Hours &amp; <em>Booking</em></div>
+    <div class="hours-grid">
+      <div>
+        <table class="hours-table">
+          <tr class="hours-row">
+            <td class="hours-day">Sunday</td>
+            <td class="hours-time">8:00 AM &ndash; 5:00 PM</td>
+          </tr>
+          <tr class="hours-row">
+            <td class="hours-day">Monday</td>
+            <td class="hours-time">8:00 AM &ndash; 5:00 PM</td>
+          </tr>
+          <tr class="hours-row">
+            <td class="hours-day">Tuesday</td>
+            <td class="hours-time extended">8:00 AM &ndash; 8:00 PM</td>
+          </tr>
+          <tr class="hours-row">
+            <td class="hours-day">Wednesday</td>
+            <td class="hours-time">8:00 AM &ndash; 5:00 PM</td>
+          </tr>
+          <tr class="hours-row">
+            <td class="hours-day">Thursday</td>
+            <td class="hours-time extended">12:00 AM &ndash; 8:00 PM</td>
+          </tr>
+          <tr class="hours-row">
+            <td class="hours-day">Friday</td>
+            <td class="hours-time extended">8:00 AM &ndash; 7:00 PM</td>
+          </tr>
+          <tr class="hours-row">
+            <td class="hours-day">Saturday</td>
+            <td class="hours-time">8:00 AM &ndash; 5:00 PM</td>
+          </tr>
+        </table>
+      </div>
+      <div class="hours-cta-box">
+        <h3>Ready for a<br><em>Fresh Look?</em></h3>
+        <p>Book your appointment online or give us a call. We are open seven days a week and happy to find a time that works for you.</p>
+        <a href="#" class="hours-phone">Call to Book</a>
+        <a href="#book" class="btn btn-gold-solid" style="display:inline-block;">Book Online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-bg">
+  <div class="section-inner">
+    <div class="section-label">Client Reviews</div>
+    <div class="section-title">What People <em>Are Saying</em></div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"The best salon experience I have had in Connecticut. My stylist truly listened to what I wanted and delivered something even better than I imagined."</p>
+        <div class="review-author">Jennifer M.</div>
+        <div class="review-platform">Cheshire, CT</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"Brought my daughter for her first real haircut and the stylist made it such a wonderful experience. She felt like a little princess walking out. We will be back."</p>
+        <div class="review-author">Rachel T.</div>
+        <div class="review-platform">Cheshire, CT</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"My color came out absolutely perfect. I have been going to different salons for years trying to get this look right. Belle Cheveux nailed it on the first try."</p>
+        <div class="review-author">Amanda K.</div>
+        <div class="review-platform">Wallingford, CT</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-bg" id="faq">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <div class="section-title">FAQ</div>
+    <div class="faq-wrap" id="faqList">
+      <div class="faq-item open">
+        <button class="faq-question" aria-expanded="true">Do you take walk-ins or appointments only? <span class="faq-plus">+</span></button>
+        <p class="faq-answer">We recommend booking an appointment to ensure you get the stylist and time slot you prefer. We do our best to accommodate walk-ins when availability allows, but appointments are given priority.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do you offer services for men and children? <span class="faq-plus">+</span></button>
+        <p class="faq-answer">Yes. Belle Cheveux provides professional hair services for men, women, and children. We welcome clients of all ages and take pride in making every guest feel comfortable and well taken care of.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is the best hair salon in Cheshire, CT? <span class="faq-plus">+</span></button>
+        <p class="faq-answer">Belle Cheveux Salon is Cheshire's top-rated hair salon with a 5.0 star rating. Known for master-level stylists, precision cuts, expert color work, and a welcoming environment for the whole family.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What hair color services do you offer? <span class="faq-plus">+</span></button>
+        <p class="faq-answer">We offer a full range of color services including full color, highlights, lowlights, balayage, ombre, color correction, gloss, and toning. Our colorists will consult with you to find the right approach for your hair type and goals.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How do I book an appointment? <span class="faq-plus">+</span></button>
+        <p class="faq-answer">You can book online through our booking button on this page, or call us directly. We are open seven days a week and happy to find a time that works with your schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-cta-bg">
+  <div class="final-cta" id="book">
+    <div class="final-cta-ornament">
+      <span class="final-cta-ornament-text">Belle</span>
+    </div>
+    <div class="final-cta-inner">
+      <div class="section-label" style="justify-content:center; margin-bottom:1.25rem;">Your Next Appointment Awaits</div>
+      <h2>Let Us Bring Your<br><em>Hair Vision to Life.</em></h2>
+      <p>Belle Cheveux Salon is accepting new clients. Book your appointment online or call us today. Open seven days a week in Cheshire, CT.</p>
+      <div class="cta-row">
+        <a href="#" class="btn btn-gold-solid">Book an Appointment</a>
+        <a href="#services" class="btn btn-ghost">View All Services</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo-main">Belle Cheveux</div>
+      <div class="footer-logo-sub">&#9679; &nbsp; Salon &nbsp; &#9679; &nbsp; Cheshire, CT &nbsp; &#9679;</div>
+      <p class="footer-tagline">Professional hair services for men, women, and children. Master hairstylists. Open seven days a week. Your hair vision, brought to life.</p>
+      <div class="social-row">
+        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li>Haircuts &amp; Styling</li>
+        <li>Hair Color</li>
+        <li>Highlights &amp; Balayage</li>
+        <li>Keratin Treatments</li>
+        <li>Men's Services</li>
+        <li>Children's Cuts</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <ul>
+        <li>Cheshire, CT</li>
+        <li>Open 7 Days a Week</li>
+        <li>Sun &ndash; Mon: 8AM &ndash; 5PM</li>
+        <li>Tue: 8AM &ndash; 8PM</li>
+        <li>Thu: 12PM &ndash; 8PM</li>
+        <li>Fri: 8AM &ndash; 7PM</li>
+        <li style="margin-top:0.75rem;"><a href="#book">Book Online</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Belle Cheveux Salon. Cheshire, CT. All rights reserved. Site built by <a href="https://quickflipdigital.com" target="_blank">QuickFlip Digital</a>.</p>
+    <p>Privacy Policy</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
